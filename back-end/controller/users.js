@@ -11,6 +11,11 @@ const create = async (req, res, next) => {
     } catch (error) { next({ status: 500, error }); }
 }
 
+const getAll = async (_req, res) => {
+    const { status, data, message } = await userService.getAll();
+    if (message) return res.status(status).json(message);
 
+    return res.status(status).json(data);
+}
 
-module.exports = { create };
+module.exports = { create, getAll };
