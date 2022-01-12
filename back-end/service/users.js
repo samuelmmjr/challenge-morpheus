@@ -1,8 +1,15 @@
 const { Users } = require('../model/users');
 
-async function create(data) {
+const create = async (data) => {
     const { fullName } = data;
+    // console.log(data)
     await Users.create({ fullName });
     return { status: 201, message: 'Usuário criado com sucesso' };
 }
-module.exports = { create };
+
+const getAll = async () => {
+    const users = await Users.findAll();
+    return { status: 200, data: users }
+}
+
+module.exports = { create, getAll };
