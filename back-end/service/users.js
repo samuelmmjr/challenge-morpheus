@@ -2,6 +2,7 @@ const { Users } = require('../model/users');
 
 const create = async (data) => {
     const { fullName } = data;
+    // console.log(data)
     await Users.create({ fullName });
     return { status: 201, message: 'Usuário criado com sucesso' };
 }
