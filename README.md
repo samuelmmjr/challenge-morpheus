@@ -1,5 +1,6 @@
 # challenge-morpheus
-
+<h1 align="center">  
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/qWKDFhM/1556218159101.jpg" alt="1556218159101" border="0"></a>
 
 <h4 align="center"> 
 	🚧  🚀 Foi utilizado para o desenvolvimento do back-end Node.js + Express + SQLite. Optei por utilizar o banco SQLite por ser um banco leve e composto apenas de um arquivo, não sendo necessário a utilização de um SGBD para inicia-lo.  🚧
